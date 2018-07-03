@@ -1,8 +1,8 @@
 import json
 import urllib
 from os import curdir, sep
-from urlparse import parse_qs
-from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
+from urllib.parse import parse_qs
+from http.server import BaseHTTPRequestHandler, HTTPServer
 
 class Handler(BaseHTTPRequestHandler):
   def set_headers(self):

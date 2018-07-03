@@ -1,8 +1,8 @@
 import json
 import urllib
 from os import curdir, sep
-from urlparse import parse_qs
-from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
+from urllib.parse import parse_qs
+from http.server import BaseHTTPRequestHandler, HTTPServer
 
 SITE_VERIFY_URL = 'https://www.google.com/recaptcha/api/siteverify'
 SITE_SECRET = '6LfeHx4UAAAAAFWXGh_xcL0B8vVcXnhn9q_SnQ1b'
